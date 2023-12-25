@@ -1,69 +1,30 @@
 {
-  "name": "tauri-nextjs-template",
-  "version": "0.1.0",
   "private": true,
-  "author": {
-    "name": "Your Name Here",
-    "email": "your-email-here@example.com"
-  },
+  "name": "my-nextron-app",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "main": "app/background.js",
   "scripts": {
-    "next-start": "cross-env BROWSER=none next dev",
-    "next-build": "next build",
-    "tauri": "tauri",
-    "build": "tauri build",
-    "dev": "tauri dev",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "@blueprintjs/core": "^5.7.2",
-    "@tauri-apps/api": "^1.5.1",
-    "clsx": "^2.0.0",
-    "next": "^14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0"
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "^3.2.2",
-    "@tauri-apps/cli": "^1.5.7",
-    "@testing-library/dom": "^9.3.3",
-    "@testing-library/jest-dom": "^6.1.5",
-    "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.1",
-    "@types/jest": "^29.5.11",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.13.2",
-    "@typescript-eslint/parser": "^6.13.2",
-    "autoprefixer": "^10.4.16",
-    "cross-env": "^7.0.3",
-    "cssnano": "^6.0.1",
-    "eslint": "^8.55.0",
-    "eslint-config-next": "^14.0.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "postcss": "^8.4.32",
-    "postcss-import": "^15.1.0",
-    "postcss-nesting": "^12.0.1",
-    "prettier": "^3.1.1",
-    "prettier-plugin-tailwindcss": "^0.5.9",
-    "tailwindcss": "^3.3.6",
-    "typescript": "^5.3.3"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@ant-design/icons": "^4.7.0",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "antd": "^4.22.8",
+    "electron": "^26.2.2",
+    "electron-builder": "^24.6.4",
+    "next": "^12.3.4",
+    "nextron": "^8.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
   }
 }
